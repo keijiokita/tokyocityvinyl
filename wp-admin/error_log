@@ -1,0 +1,12 @@
+[26-Oct-2019 07:14:10 UTC] PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /home/vjisziqo/public_html/tokyocityvinyl.com/wp-includes/media.php on line 2948
+[26-Oct-2019 07:14:10 UTC] PHP Warning:  imageantialias() expects parameter 1 to be resource, boolean given in /home/vjisziqo/public_html/tokyocityvinyl.com/wp-includes/class-wp-image-editor-gd.php on line 291
+[26-Oct-2019 07:14:10 UTC] PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /home/vjisziqo/public_html/tokyocityvinyl.com/wp-includes/class-wp-image-editor-gd.php on line 294
+[28-Oct-2019 10:59:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_instance_option_key() on boolean in /home/vjisziqo/public_html/tokyocityvinyl.com/wp-content/plugins/woocommerce/includes/class-wc-ajax.php:2767
+Stack trace:
+#0 /home/vjisziqo/public_html/tokyocityvinyl.com/wp-includes/class-wp-hook.php(286): WC_AJAX::shipping_zone_methods_save_changes('')
+#1 /home/vjisziqo/public_html/tokyocityvinyl.com/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /home/vjisziqo/public_html/tokyocityvinyl.com/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /home/vjisziqo/public_html/tokyocityvinyl.com/wp-admin/admin-ajax.php(173): do_action('wp_ajax_woocomm...')
+#4 {main}
+  thrown in /home/vjisziqo/public_html/tokyocityvinyl.com/wp-content/plugins/woocommerce/includes/class-wc-ajax.php on line 2767
+[30-Oct-2019 12:29:33 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp00_options` WHERE `option_name` = '_transient_jetpack_idc_allowed' made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/jetpack/jetpack.php'), require_once('/plugins/jetpack/load-jetpack.php'), require_once('/plugins/jetpack/class.jetpack-idc.php'), Jetpack_IDC::init, Jetpack_IDC->__construct, Jetpack::check_identity_crisis, Jetpack::validate_sync_error_idc_option, get_transient, delete_option
